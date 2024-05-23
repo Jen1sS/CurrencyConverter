@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MockServer</title>
+
+        <script src="./js/app.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <script>setup()</script>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Currency Converter</h1>
+        </header>
+
+        <div id="container">
+            <div id="input" class="inside">
+                <h1>From... </h1>
+                <img src="img/USD.png">
+
+                <hr class="dis">
+
+                <label for="currency0" id="flag">Money you want to convert:</label>
+                <br>
+
+                <input type="number" onchange="calc()">
+                <select id="currency0" onchange=currFlag(0)>
+                    <script>getValues(0)</script>
+                </select>
+
+            </div>
+
+            <div id="output" class="inside">
+                <h1>To...</h1>
+                <img src="img/USD.png">
+
+                <hr class="dis">
+
+                <label for="currency1" id="result">1</label>
+                <select id="currency1" onchange=currFlag(1)>
+                    <script>getValues(1)</script>
+                </select>
+
+            </div>
+        </div>
+
+    </body>
+</html>
